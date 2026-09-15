@@ -19,11 +19,7 @@ while True:
 
     if base10 > 31:
         print("Please enter a smaller number.")
-<<<<<<< HEAD
     elif base10 < 0:
-=======
-    if base10 < 0:
->>>>>>> 15125fb80d79e78df7d7630c37fbbf53d39a2fa5
         print("Please enter a larger number.")
     else:
         break
