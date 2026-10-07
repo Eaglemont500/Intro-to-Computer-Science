@@ -75,6 +75,7 @@ distances.sort()
 # Look at the 3 nearest neighbors
 k = 5
 
+
 print("Nearest neighbors:")
 
 for d, label, person in distances[:k]:
