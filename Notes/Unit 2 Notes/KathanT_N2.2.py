@@ -45,11 +45,12 @@ if flip == "tails":
 
 import random
 
-total_rolls = 0
+total_rolls = int(input("How many rolls would you like to simulate?\n"))
+total_rolls_completed = 0
 even_rolls = 0
 odd_rolls = 0
 
-while total_rolls < 100:
+while total_rolls_completed < total_rolls:
     dice_roll = random.choice([1 , 2 , 3 , 4 , 5 , 6])
 
     if dice_roll % 2 == 0:
@@ -58,6 +59,10 @@ while total_rolls < 100:
     elif dice_roll % 2 == 1:
         odd_rolls += 1
 
-    total_rolls += 1
+    else:
+        print ("An error has occured.")
+        exit()
+
+    total_rolls_completed += 1
 
 print(f"There were a total of {even_rolls} even rolls and {odd_rolls} odd rolls.")
