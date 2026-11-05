@@ -1,5 +1,4 @@
 ## For Loops
-'''
 for i in range(5):
     print(i)
 
@@ -54,7 +53,7 @@ experimental_probability = sixes / n
 print("Theoretical Probability is: ", theoretical_probability)
 print("Simulated Probability is: ", experimental_probability)
 
-'''
+
 
 ## Sort and find the largest grade
 grades = [94, 97, 82, 89, 36, 87, 15, 87, 67, 69, 99]
