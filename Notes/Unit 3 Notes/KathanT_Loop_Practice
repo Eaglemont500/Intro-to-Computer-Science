@@ -1,0 +1,94 @@
+## Part I: While Loops
+
+## 1. Write a while loop that prints the numbers from 1 through 10, onenumber per line.
+x = 1
+while x <= 10:
+    print(x)
+    x += 1
+
+## 2. Write a program using a while loop that calculates the sum of all integers from 1 through 50. Print the final sum.
+current_number = 1
+sum = 0
+while current_number <= 50:
+    sum += current_number
+    current_number += 1
+print(sum)
+
+## 3. Write a program that repeatedly asks the user to enter a password.
+## The correct password is "python123".
+## Continue asking until the user enters the correct password.
+## When the correct password is entered, print "Access Granted".
+password = ""
+while password != "python123":
+    password = input("Enter a password\n")
+print("Access Granted")
+
+## 4. Consider the following Python code.
+## x = 2
+## while x < 20:
+##     print(x)
+##     x = x * 2
+## (a) What numbers will be printed?
+##      2, 4, 8, 16
+## (b) How many times will the loop execute?
+##      4 times
+## (c) What is the final value of x?
+##      16
+
+
+## Part II: For Loops
+
+## 5. Write a for loop using range() that prints all even numbers from 2 through 20.
+for i in range (2,21,2):
+    print(i)
+
+## 6. Write a program using a for loop that asks for the user to enter 5 numbers.
+## Calculate and print the sum of the 5 numbers.
+number = 0
+sum = 0
+for i in range (1,6):
+    number = int(input(f"Enter number {i}:\n"))
+    sum += number
+print(sum)
+
+## 7. Write a for loop that goes through the following string and prints each character on a seperate line.
+word = "COMPUTER"
+for i in word:
+    print(i)
+
+## 8. Write nested for loops that produce the following output:
+## *
+## **
+## ***
+## ****
+## *****
+for i in range (1,6):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+## 9. Write nested for loops that print the following multiplication pattern:
+## 1 2 3 4
+## 2 4 6 8
+## 3 6 9 12
+## 4 8 12 16
+for i in range (1,5):
+    for j in range (1,5):
+        print(i * j, end=" ")
+    print("")
+
+## 10. Consider the following Python code.
+## for i in range (1,4):
+##     for j in range (1,4):
+##         print(i + j, end=" ")
+##     print()
+## (a) What is the complete output?
+##     2 3 4
+##     3 4 5 
+##     4 5 6
+## (b) How many times does the outer loop execute?
+##     3 times
+## (c) How many times does the inner loop execute in total?
+##     9 times
+## (d) How many numbers are printed?
+##     9 numbers
