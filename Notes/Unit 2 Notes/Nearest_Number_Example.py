@@ -75,7 +75,7 @@ print("Nearest neighbors:")
 
 for distance, index in zip(distances[0], indices[0]):
     print(x[index], y[index], "distance =", round(distance, 2))
-'''
+
 #without a knn package
 import math
 
@@ -150,4 +150,3 @@ else:
 
 
 print("\nPrediction:", prediction)
-'''

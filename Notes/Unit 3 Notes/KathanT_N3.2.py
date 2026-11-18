@@ -1,4 +1,4 @@
-'''for i in range (10):
+for i in range (10):
     if i == 5:
         break   ## Break stops at 5
     print(i)
@@ -7,7 +7,7 @@ for i in range (10):
     if i == 5:
         continue   ## Continue skips 5
     print(i)
-'''
+
 ## Sum of perfect squares between 1 and 100 that are divisible by three
 sum = 0
 for i in range (11):

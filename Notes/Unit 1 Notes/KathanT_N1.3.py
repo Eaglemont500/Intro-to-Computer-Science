@@ -1,11 +1,10 @@
-'''
 base10 = int(input("Enter a Base 10 number to convert to Binary\n"))
 
 binary = bin(base10)
 binary = binary.removeprefix("0b")
 
 print(binary)
-'''
+
 
 while True:
     try:
